@@ -1,10 +1,10 @@
 {
   "name": "employees-api",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/app.js", 
   "scripts": {
     "start": "node dist/app.js",
-    "dev": "nodemon",
+    "dev": "nodemon src/app.ts",
     "build": "tsc",
     "serve": "npm run build && npm run start"
   },
