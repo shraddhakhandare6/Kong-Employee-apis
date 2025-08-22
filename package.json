@@ -1,0 +1,33 @@
+{
+  "name": "employees-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/app.js",
+    "dev": "nodemon",
+    "build": "tsc",
+    "serve": "npm run build && npm run start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.2.1",
+    "@types/swagger-ui-express": "^4.1.8",
+    "@types/yamljs": "^0.2.34",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.55.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
+  }
+}
