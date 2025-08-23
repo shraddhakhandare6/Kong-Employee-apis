@@ -1,11 +1,11 @@
 {
   "name": "employees-api",
   "version": "1.0.0",
-  "main": "dist/app.js", 
+  "main": "dist/app.js",
   "scripts": {
     "start": "node dist/app.js",
     "dev": "nodemon src/app.ts",
-    "build": "tsc",
+      "build": "tsc && cp -r src/swagger dist/",
     "serve": "npm run build && npm run start"
   },
   "keywords": [],
@@ -28,6 +28,7 @@
     "dotenv": "^17.2.1",
     "express": "^5.1.0",
     "swagger-jsdoc": "^6.2.8",
-    "swagger-ui-express": "^5.0.1"
+    "swagger-ui-express": "^5.0.1",
+    "yamljs": "^0.3.0"
   }
 }
